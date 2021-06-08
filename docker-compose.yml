@@ -2,7 +2,8 @@ version: "3"
 
 services:
   crypto-trading:
-    image: edeng23/binance-trade-bot
+    image: axgot/binance-trading-bot
+    #image: edeng23/binance-trade-bot
     container_name: binance_trader
     working_dir: /app
     volumes:
@@ -16,7 +17,8 @@ services:
       - PYTHONUNBUFFERED=1
 
   api:
-    image: edeng23/binance-trade-bot
+    image: axgot/binance-trading-bot
+    #image: edeng23/binance-trade-bot
     container_name: binance_trader_api
     working_dir: /app
     volumes:
